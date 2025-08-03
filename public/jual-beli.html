@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit - Yon Teknik</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    .genset-section {
+      padding: 40px;
+      background-color: #f5f5f5;
+    }
+
+    .genset-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .genset-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .genset-card {
+      display: flex;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      flex-wrap: wrap;
+    }
+
+    .genset-image {
+      flex: 1 1 300px;
+    }
+
+    .genset-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .genset-info {
+      flex: 1 1 300px;
+      padding: 20px;
+    }
+
+    .genset-info h3 {
+      margin-top: 0;
+      color: #c0392b;
+    }
+
+    .genset-info ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .genset-info ul li {
+      margin: 8px 0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .genset-card {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+ <div class="header-container">
+      <div class="logo">
+        <img src="/images/logo-cv.png" alt="Logo Yon Teknik" />
+        <span>Yon Teknik</span>
+      </div>
+
+      <button class="hamburger-menu" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="main-nav">
+        <a href="index.html">Beranda</a>
+        <a href="jual-beli.html">Unit</a>
+        <a href="layanan.html">Layanan</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+</header>
+
+<section class="genset-section">
+  <h2>Daftar Unit Genset Tersedia</h2>
+  <div class="genset-list">
+
+    <div class="genset-card">
+      <div class="genset-image">
+        <img src="images/genset1.jpg" alt="Genset Cummins">
+      </div>
+      <div class="genset-info">
+        <h3>Cummins 100 kVA</h3>
+        <ul>
+          <li><strong>Tahun Produksi:</strong> 2021</li>
+          <li><strong>Silinder:</strong> 6</li>
+          <li><strong>Kapasitas:</strong> 100 kVA</li>
+          <li><strong>Merk / Asal:</strong> Cummins, Amerika Serikat</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="genset-card">
+      <div class="genset-image">
+        <img src="images/genset2.jpg" alt="Genset Mitsubishi">
+      </div>
+      <div class="genset-info">
+        <h3>Mitsubishi 150 kVA</h3>
+        <ul>
+          <li><strong>Tahun Produksi:</strong> 2022</li>
+          <li><strong>Silinder:</strong> 6</li>
+          <li><strong>Kapasitas:</strong> 150 kVA</li>
+          <li><strong>Merk / Asal:</strong> Mitsubishi, Jepang</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="genset-card">
+      <div class="genset-image">
+        <img src="images/genset3.jpg" alt="Genset Perkins">
+      </div>
+      <div class="genset-info">
+        <h3>Perkins 80 kVA</h3>
+        <ul>
+          <li><strong>Tahun Produksi:</strong> 2020</li>
+          <li><strong>Silinder:</strong> 4</li>
+          <li><strong>Kapasitas:</strong> 80 kVA</li>
+          <li><strong>Merk / Asal:</strong> Perkins, Inggris</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="genset-card">
+      <div class="genset-image">
+        <img src="images/genset4.jpg" alt="Genset Yanmar">
+      </div>
+      <div class="genset-info">
+        <h3>Yanmar 50 kVA</h3>
+        <ul>
+          <li><strong>Tahun Produksi:</strong> 2019</li>
+          <li><strong>Silinder:</strong> 4</li>
+          <li><strong>Kapasitas:</strong> 50 kVA</li>
+          <li><strong>Merk / Asal:</strong> Yanmar, Jepang</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="genset-card">
+      <div class="genset-image">
+        <img src="images/genset5.jpg" alt="Genset Doosan">
+      </div>
+      <div class="genset-info">
+        <h3>Doosan 200 kVA</h3>
+        <ul>
+          <li><strong>Tahun Produksi:</strong> 2023</li>
+          <li><strong>Silinder:</strong> 8</li>
+          <li><strong>Kapasitas:</strong> 200 kVA</li>
+          <li><strong>Merk / Asal:</strong> Doosan, Korea Selatan</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <footer class="main-footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <h4>Jelajahi</h4>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="jual-beli.html">Unit</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Layanan Kami</h4>
+      <ul>
+        <li><a href="perbaikan-genset.html">Perbaikan Genset</a></li>
+        <li><a href="instalasi-genset.html">Instalasi Genset</a></li>
+        <li><a href="service-berkala.html">Perawatan Berkala</a></li>
+        <li><a href="konsultasi.html">Konsultasi Teknis</a></li>
+      </ul>
+    </div>
+  <div class="footer-bottom">
+    &copy; 2025 Yon Teknik. Seluruh hak cipta dilindungi.
+  </div>
+</footer>
+<script src="/js/scripts.js" defer></script>

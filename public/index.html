@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Yon Teknik</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    .slider-container {
+      padding: 40px;
+      background-image: url('images/background-yon.png'); /* Ganti sesuai lokasi file */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 20px;
+      position: relative;
+      color: white;
+    }
+
+    .slider-container::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* overlay agar teks tetap terbaca */
+      z-index: 0;
+      border-radius: 20px;
+    }
+
+    .slider-container > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .slide-description-card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 15px;
+    }
+
+    .slide-description-card h3,
+    .slide-description-card p {
+      color: white;
+    }
+
+    .slide-image-collage img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .slide-item {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="/images/logo-cv.png" alt="Logo Yon Teknik" />
+        <span>Yon Teknik</span>
+      </div>
+
+      <button class="hamburger-menu" aria-label="Toggle Navigation" aria-controls="main-nav" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="main-nav">
+        <a href="index.html">Beranda</a>
+        <a href="jual-beli.html">Unit</a>
+        <a href="layanan.html">Layanan</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-image">
+    <img src="images/gg.jpg" alt="Latar Belakang Beranda Yon Teknik">
+  </section>
+
+  <section class="profile-section-sig-style">
+    <div class="profile-content-wrapper">
+      <div class="profile-text-content">
+        <h2>Profil Perusahaan</h2>
+        <p>
+          <strong>CV Yon Teknik</strong> didirikan pada tanggal <strong>29 Oktober 2014</strong>, dan merupakan perusahaan yang bergerak di bidang
+          <strong>jasa perbaikan, instalasi, perawatan genset</strong>, serta <strong>jual beli unit genset</strong> untuk kebutuhan industri, komersial, dan perumahan.
+          Kami hadir dengan pengalaman lebih dari satu dekade dan dukungan teknisi bersertifikat untuk memberikan solusi yang efisien dan andal bagi berbagai jenis genset – dari kapasitas kecil hingga besar.
+        </p>
+        <p>
+          Kami mengutamakan <strong>kecepatan, ketepatan, dan kualitas kerja</strong> dalam setiap proyek. Dengan menggunakan peralatan unggul dan tim yang berdedikasi,
+          kami menjadi mitra terpercaya dalam menjaga kelangsungan energi cadangan Anda.
+        </p>
+        <p>
+          Komitmen kami adalah memberikan <strong>layanan responsif 24 jam</strong>, termasuk konsultasi teknis, perawatan berkala, dan penanganan darurat untuk memastikan genset Anda tetap dalam kondisi optimal kapan pun dibutuhkan.
+        </p>
+      </div>
+      <div class="profile-image-container">
+        <img src="images/profile-image.jpg" alt="Gambar Profil Perusahaan">
+      </div>
+    </div>
+  </section>
+
+  <div class="slider-container">
+    <div class="slider-wrapper" id="innovationsSlider">
+      <h2 class="section-title">On Innovations <br> + Solutions</h2>
+
+      <div class="slide-item">
+        <div class="slide-image-collage">
+          <img src="images/bg-layanan.jpg" alt="Inovasi Solusi 1">
+        </div>
+        <div class="slide-description-card">
+          <h3>Pendekatan Yon Teknik terhadap inovasi dan solusi yang dititikberatkan pada prinsip keberlanjutan dan kemudahan konsumen (R&D)</h3>
+          <p>
+            Kami pastikan rangkaian produk kami bisa memberi solusi dan layanan berkelanjutan terbaik, sesuai tuntutan zaman. Melalui layanan kami, kami
+            menawarkan solusi genset dengan teknologi efisien. Pelayanan kami juga menjamin kenyamanan bagi pelanggan di mana pun
+            berada.
+          </p>
+        </div>
+      </div>
+
+      <div class="slide-item">
+        <div class="slide-image-collage">
+          <img src="images/genset11.jpg" alt="Inovasi Solusi 2">
+        </div>
+        <div class="slide-description-card">
+          <h3>Bagaimana setiap layanan Yon Teknik memiliki keunggulan dari sisi teknologi serta ramah lingkungan</h3>
+          <p>
+            Proses perawatan kami menggunakan teknologi terkini yang berhasil memenuhi prinsip efisiensi dan berkelanjutan. Formula perawatan genset yang
+            kami aplikasikan menjamin genset memiliki ketahanan tinggi dan performa optimal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>Jelajahi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="jual-beli.html">Unit</a></li>
+          <li><a href="services.html">Layanan</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Layanan Kami</h4>
+        <ul>
+          <li><a href="perbaikan-genset.html">Perbaikan Genset</a></li>
+          <li><a href="instalasi-genset.html">Instalasi Genset</a></li>
+          <li><a href="service-berkala.html">Perawatan Berkala</a></li>
+          <li><a href="konsultasi.html">Konsultasi Teknis</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Ikuti Kami</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/yonteknik" target="_blank" aria-label="Ikuti kami di Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Yon Teknik. Seluruh hak cipta dilindungi.
+    </div>
+  </footer>
+
+<script src="/js/scripts.js" defer></script>
+</body>
+</html>
