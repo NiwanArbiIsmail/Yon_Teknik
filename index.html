@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV Yon Teknik</title>
-  <link rel="stylesheet" href="/css/style.css" />
+  <meta name="description" content="Yon Teknik - Jasa perbaikan, instalasi, dan perawatan genset profesional di Tangerang.">
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <style>
     .slider-container {
       padding: 40px;
-      background-image: url('images/background-yon.png'); /* Ganti sesuai lokasi file */
+      background-image: url('images/background-yon.png'); /* Pastikan file ini ada */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -18,38 +19,32 @@
       position: relative;
       color: white;
     }
-
     .slider-container::before {
       content: "";
       position: absolute;
       inset: 0;
-      background-color: rgba(0, 0, 0, 0.5); /* overlay agar teks tetap terbaca */
+      background-color: rgba(0, 0, 0, 0.5);
       z-index: 0;
       border-radius: 20px;
     }
-
     .slider-container > * {
       position: relative;
       z-index: 1;
     }
-
     .slide-description-card {
       background: rgba(0, 0, 0, 0.6);
       padding: 20px;
       border-radius: 15px;
       margin-top: 15px;
     }
-
     .slide-description-card h3,
     .slide-description-card p {
       color: white;
     }
-
     .slide-image-collage img {
       max-width: 100%;
       border-radius: 10px;
     }
-
     .slide-item {
       margin-bottom: 30px;
     }
@@ -57,10 +52,11 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <div class="header-container">
       <div class="logo">
-        <img src="/images/logo-cv.png" alt="Logo Yon Teknik" />
+        <img src="images/logo-cv.png" alt="Logo CV Yon Teknik" />
         <span>Yon Teknik</span>
       </div>
 
@@ -68,11 +64,10 @@
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
-        <span class="bar"></span>
       </button>
 
       <nav id="main-nav">
-        <a href="index.html">Beranda</a>
+        <a href="index.html" class="active">Beranda</a>
         <a href="jual-beli.html">Unit</a>
         <a href="layanan.html">Layanan</a>
         <a href="contact.html">Kontak</a>
@@ -80,10 +75,12 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero-image">
     <img src="images/gg.jpg" alt="Latar Belakang Beranda Yon Teknik">
   </section>
 
+  <!-- Profil Perusahaan -->
   <section class="profile-section-sig-style">
     <div class="profile-content-wrapper">
       <div class="profile-text-content">
@@ -102,11 +99,12 @@
         </p>
       </div>
       <div class="profile-image-container">
-        <img src="images/profile-image.jpg" alt="Gambar Profil Perusahaan">
+        <img src="images/profile-image.jpg" alt="Gambar Profil Perusahaan Yon Teknik">
       </div>
     </div>
   </section>
 
+  <!-- Slider Innovations -->
   <div class="slider-container">
     <div class="slider-wrapper" id="innovationsSlider">
       <h2 class="section-title">On Innovations <br> + Solutions</h2>
@@ -140,6 +138,7 @@
     </div>
   </div>
 
+  <!-- Footer -->
   <footer class="main-footer">
     <div class="footer-content">
       <div class="footer-column">
@@ -147,7 +146,7 @@
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="jual-beli.html">Unit</a></li>
-          <li><a href="services.html">Layanan</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
           <li><a href="contact.html">Kontak</a></li>
         </ul>
       </div>
@@ -176,6 +175,6 @@
     </div>
   </footer>
 
-<script src="/js/scripts.js" defer></script>
+<script src="js/scripts.js" defer></script>
 </body>
 </html>
